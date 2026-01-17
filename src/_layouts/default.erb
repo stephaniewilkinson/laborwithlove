@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="<%= site.locale %>">
+  <head>
+    <%= render "head", metadata: site.metadata, title: data.title %>
+  </head>
+  <body class="min-h-screen flex flex-col bg-background">
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center" style="height: 100px;">
+          <a href="<%= relative_url '/' %>" class="flex items-center no-underline">
+            <img src="<%= relative_url '/images/logo-color.svg' %>" alt="Labor with Love" style="height: 68px; width: auto;" />
+          </a>
+          <ul class="hidden md:flex items-center space-x-8">
+            <li><a href="<%= relative_url '/' %>" class="text-gray-600 hover:text-primary-600 font-medium no-underline">Home</a></li>
+            <li><a href="<%= relative_url '/about' %>" class="text-gray-600 hover:text-primary-600 font-medium no-underline">About</a></li>
+            <li><a href="<%= relative_url '/posts' %>" class="text-gray-600 hover:text-primary-600 font-medium no-underline">Blog</a></li>
+            <li><a href="mailto:<%= site.metadata.email %>" class="btn btn-primary no-underline">Contact</a></li>
+          </ul>
+          <!-- Mobile menu button -->
+          <button type="button" class="md:hidden p-2 text-gray-600" id="mobile-menu-btn">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden pb-4" id="mobile-menu">
+          <ul class="space-y-2">
+            <li><a href="<%= relative_url '/' %>" class="block py-2 text-gray-600 hover:text-primary-600 no-underline">Home</a></li>
+            <li><a href="<%= relative_url '/about' %>" class="block py-2 text-gray-600 hover:text-primary-600 no-underline">About</a></li>
+            <li><a href="<%= relative_url '/posts' %>" class="block py-2 text-gray-600 hover:text-primary-600 no-underline">Blog</a></li>
+            <li><a href="mailto:<%= site.metadata.email %>" class="block py-2 text-primary-600 font-medium no-underline">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow">
+      <%= yield %>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 mt-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <img src="<%= relative_url '/images/logo-white.svg' %>" alt="Labor with Love" class="h-12 w-auto mb-4" />
+            <p class="text-primary-200 text-sm"><%= site.metadata.description %></p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="<%= relative_url '/' %>" class="text-primary-200 hover:text-white no-underline">Home</a></li>
+              <li><a href="<%= relative_url '/about' %>" class="text-primary-200 hover:text-white no-underline">About Rebecah</a></li>
+              <li><a href="<%= relative_url '/posts' %>" class="text-primary-200 hover:text-white no-underline">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-white mb-4">Get in Touch</h4>
+            <p class="text-primary-200 text-sm mb-2"><%= site.metadata.location %></p>
+            <a href="mailto:<%= site.metadata.email %>" class="text-primary-300 hover:text-white text-sm no-underline"><%= site.metadata.email %></a>
+          </div>
+        </div>
+        <div class="border-t border-primary-800 mt-8 pt-8 text-center text-primary-300 text-sm">
+          &copy; <%= Time.now.year %> <%= site.metadata.title %>. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

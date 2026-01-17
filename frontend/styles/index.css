@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import "./syntax-highlighting.css";
+
+@theme {
+  --color-background: #fcf6f7;
+
+  --color-primary-50: #faf5fb;
+  --color-primary-100: #f5ebf6;
+  --color-primary-200: #ebd6ed;
+  --color-primary-300: #dbb5df;
+  --color-primary-400: #c689cc;
+  --color-primary-500: #a85fb4;
+  --color-primary-600: #6a2b70;
+  --color-primary-700: #5a2460;
+  --color-primary-800: #4a1e4f;
+  --color-primary-900: #3d1a42;
+  --color-primary-950: #270a2b;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Georgia', 'Cambria', serif;
+}
+
+/* Custom base styles */
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: theme(colors.gray.800);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: theme(colors.gray.900);
+  }
+
+  a {
+    color: var(--color-primary-600);
+    transition: color 0.15s ease-in-out;
+  }
+
+  a:hover {
+    color: var(--color-primary-700);
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.15s ease-in-out;
+  }
+
+  .btn-primary {
+    background-color: var(--color-primary-600);
+    color: white;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-primary-700);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    padding: 1.5rem;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+}
