@@ -2,6 +2,13 @@
 
 A Bridgetown-powered website for **Labor with Love**, Rebecah Hatchel's doula practice in Rochester, New York.
 
+## Important Names
+
+- **Business Name**: Labor with Love (not "Labor of Love")
+- **Domain**: laborwithlove.net
+- **Email**: hello@laborwithlove.net
+- **Instagram**: [@laborwithloveroc](https://www.instagram.com/laborwithloveroc)
+
 ## Brand Assets
 
 All brand assets are located in `src/images/`:
