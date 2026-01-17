@@ -72,8 +72,8 @@ layout: default
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="md:flex items-center gap-12">
         <div class="md:w-1/2 mb-8 md:mb-0">
-          <div class="bg-primary-50 rounded-2xl aspect-square flex items-center justify-center p-8">
-            <img src="/images/logo-color-bg.svg" alt="Labor with Love" class="w-full h-full object-contain" />
+          <div class="rounded-2xl aspect-square overflow-hidden">
+            <img src="/images/rebecah_hatchel.png" alt="Rebecah Hatchel" class="w-full h-full object-cover" />
           </div>
         </div>
         <div class="md:w-1/2">

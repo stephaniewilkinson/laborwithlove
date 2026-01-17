@@ -4,8 +4,8 @@ title: About Rebecah
 ---
 
 <div class="not-prose mb-12">
-  <div class="w-64 h-64 mx-auto flex items-center justify-center mb-8">
-    <img src="/images/logo-color-bg.svg" alt="Labor with Love" class="w-full h-full object-contain" />
+  <div class="w-64 h-64 mx-auto mb-8 overflow-hidden rounded-full">
+    <img src="/images/rebecah_hatchel.png" alt="Rebecah Hatchel" class="w-full h-full object-cover" />
   </div>
 </div>
 
@@ -16,6 +16,13 @@ Hello! I'm Rebecah Hatchel, and I'm honored to serve families in Rochester, New 
 As a mother of four, my path to doula work began with my own birth experiences. Each of my births taught me something new about the profound impact that continuous, compassionate support can have during one of life's most transformative moments. I realized that every birthing person deserves to feel heard, supported, and empowered—and that too often, they don't get the advocacy they need.
 
 Beyond my personal journey through pregnancy and birth, I bring years of experience working with children and youth. From infant care through adolescence, I've dedicated my career to supporting families at every stage. This extensive background in childcare gives me a deep understanding of the transition into parenthood and the realities of life with little ones.
+
+<div class="not-prose my-10">
+  <div class="rounded-2xl overflow-hidden shadow-lg">
+    <img src="/images/rebecah_hatchel_family.png" alt="Rebecah Hatchel and her family" class="w-full h-auto" />
+  </div>
+  <p class="text-center text-sm text-gray-500 mt-3 italic">My beautiful family</p>
+</div>
 
 ## What is a Doula?
 
