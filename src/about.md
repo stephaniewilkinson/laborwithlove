@@ -95,7 +95,7 @@ I believe that birth is a deeply personal experience, and my role is to support 
 I'd love to learn about your story and discuss how I can support your journey into parenthood. Whether you're just starting to explore your options or you're ready to build your birth team, I'm here for you.
 
 <div class="not-prose mt-10 text-center">
-  <a href="mailto:hello@laborwithlove.net" class="btn btn-primary text-lg px-8 py-3 no-underline">
+  <a href="/contact" class="btn btn-primary text-lg px-8 py-3 no-underline">
     Schedule a Free Consultation
   </a>
 </div>

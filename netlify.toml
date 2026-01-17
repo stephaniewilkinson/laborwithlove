@@ -1,0 +1,13 @@
+[build]
+  command = "bin/bridgetown deploy"
+  publish = "output"
+
+[build.environment]
+  RUBY_VERSION = "3.3.0"
+  NODE_VERSION = "20"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"

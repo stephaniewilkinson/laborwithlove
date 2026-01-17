@@ -15,8 +15,8 @@
 # handles, etc., take a look at `src/_data/site_metadata.yml`
 
 Bridgetown.configure do |config|
-  # The base hostname & protocol for your site, e.g. https://example.com
-  url ""
+  # The base hostname & protocol for your site
+  url "https://laborwithlove.net"
 
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
@@ -57,27 +57,11 @@ Bridgetown.configure do |config|
   #
   # fast_refresh false
 
-  # You can use `init` to initialize various Bridgetown features or plugin gems.
-  # For example, you can use the Dotenv gem to load environment variables from
-  # `.env`. Just `bundle add dotenv` and then uncomment this:
-  #
-  # init :dotenv
-  #
+  # Load environment variables from `.env`
+  init :dotenv
 
-  # Uncomment to use Bridgetown SSR (aka dynamic rendering of content via Roda):
-  #
-  # init :ssr
-  #
-  # Add `sessions: true` if you need to use session data, flash, etc.
-  #
-
-  # Uncomment to use file-based dynamic template routing via Roda (make sure you
-  # uncomment the gem dependency in your `Gemfile` as well):
-  #
-  # init :"bridgetown-routes"
-  #
-  # NOTE: you can remove `init :ssr` if you load this initializer
-  #
+  # Enable SSR routes
+  init :"bridgetown-routes"
 
   # We also recommend that if you're using Roda routes you include this plugin
   # so you can get a generated routes list in `.routes.json`. You can then run

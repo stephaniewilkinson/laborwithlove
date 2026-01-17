@@ -1,0 +1,127 @@
+# Sveltia CMS Configuration
+# Docs: https://github.com/sveltia/sveltia-cms
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Media files will be stored in src/images
+media_folder: src/images
+public_folder: /images
+
+# Logo for the CMS
+logo_url: /images/logo-color.svg
+
+# Site URL for previews
+site_url: https://laborwithlove.net
+
+# Collections define what content can be edited
+collections:
+  # Blog Posts
+  - name: posts
+    label: Blog Posts
+    label_singular: Post
+    folder: src/_posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} ({{year}}-{{month}}-{{day}})"
+    sortable_fields:
+      fields: [date, title]
+      default:
+        field: date
+        direction: Descending
+    fields:
+      - name: layout
+        label: Layout
+        widget: hidden
+        default: post
+      - name: title
+        label: Title
+        widget: string
+        required: true
+      - name: date
+        label: Publish Date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+        required: true
+      - name: description
+        label: Description
+        widget: text
+        hint: A brief summary shown in blog listings and SEO
+        required: true
+      - name: categories
+        label: Category
+        widget: select
+        options:
+          - { label: "Updates", value: "updates" }
+          - { label: "Education", value: "education" }
+          - { label: "Birth Stories", value: "birth-stories" }
+          - { label: "Resources", value: "resources" }
+        required: true
+      - name: body
+        label: Content
+        widget: markdown
+        required: true
+
+  # About Page
+  - name: pages
+    label: Pages
+    label_singular: Page
+    files:
+      - name: about
+        label: About Page
+        file: src/about.md
+        fields:
+          - name: layout
+            label: Layout
+            widget: hidden
+            default: page
+          - name: title
+            label: Title
+            widget: string
+            required: true
+          - name: body
+            label: Content
+            widget: markdown
+            required: true
+            hint: "You can use Markdown formatting. HTML is also supported for advanced layouts."
+
+  # Site Settings
+  - name: settings
+    label: Site Settings
+    files:
+      - name: metadata
+        label: Site Metadata
+        file: src/_data/site_metadata.yml
+        fields:
+          - name: title
+            label: Site Title
+            widget: string
+            required: true
+          - name: tagline
+            label: Tagline
+            widget: string
+            required: true
+          - name: owner
+            label: Owner Name
+            widget: string
+            required: true
+          - name: location
+            label: Location
+            widget: string
+            required: true
+          - name: email
+            label: Email Address
+            widget: string
+            required: true
+          - name: description
+            label: Site Description
+            widget: text
+            hint: Used for SEO and social sharing
+            required: true
+          - name: instagram
+            label: Instagram URL
+            widget: string
+            required: false

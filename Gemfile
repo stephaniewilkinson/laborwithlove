@@ -34,6 +34,11 @@ gem "bridgetown", "~> 2.1.1"
 # (you can optionally limit this to the "development" group)
 gem "puma", "< 8"
 
+# For SSR and contact form
+gem "bridgetown-routes", "~> 2.1.1"
+gem "mail", "~> 2.8"
+gem "dotenv", "~> 3.1"
+
 # Uncomment to use the Inspectors API to manipulate the output
 # of your HTML or XML resources:
 # gem "nokogiri", "~> 1.18"

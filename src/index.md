@@ -16,7 +16,7 @@ layout: default
         <a href="/about" class="btn btn-primary text-lg px-8 py-3 no-underline">
           Learn More About Me
         </a>
-        <a href="mailto:<%= site.metadata.email %>" class="btn btn-secondary text-lg px-8 py-3 no-underline">
+        <a href="/contact" class="btn btn-secondary text-lg px-8 py-3 no-underline">
           Get in Touch
         </a>
       </div>
@@ -139,7 +139,7 @@ layout: default
       <p class="text-xl text-primary-800 mb-8">
         I'd love to hear about your birth plans and discuss how I can support you. Let's connect for a free consultation.
       </p>
-      <a href="mailto:<%= site.metadata.email %>" class="btn btn-primary text-lg px-8 py-3 no-underline">
+      <a href="/contact" class="btn btn-primary text-lg px-8 py-3 no-underline">
         Schedule a Free Consultation
       </a>
     </div>
