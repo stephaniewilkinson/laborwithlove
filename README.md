@@ -15,6 +15,14 @@ A Bridgetown-powered website for **Labor with Love**, Rebecah Hatchel's doula pr
 - **Custom Domain**: laborwithlove.net (DNS via DNSimple)
 - **Note**: stephaniewilkinson.github.io is used by the `portfolio` repo (stephaniewilkinson.com)
 
+### Troubleshooting Notes
+
+- **Do NOT remove and re-add the custom domain** - this delays certificate provisioning, not fixes it
+- HTTPS certificate provisioning can take time; just wait for GitHub to complete it
+- DNS is configured correctly with A records pointing to GitHub's IPs
+- **CNAME for www**: Points to `stephaniewilkinson.github.io` (no path needed, even though that's the portfolio site). GitHub routes based on the CNAME file in each repo, not the URL path.
+- The main `stephaniewilkinson.github.io` serves the portfolio repo (stephaniewilkinson.com), but custom domains route to the correct repo via CNAME file matching.
+
 ## Brand Assets
 
 All brand assets are located in `src/images/`:
@@ -31,6 +39,8 @@ All brand assets are located in `src/images/`:
 
 - **Background**: `#fcf6f7` (soft pink/cream)
 - **Primary**: `#6a2b70` (deep purple)
+- **Secondary**: `#7d9a78` (sage green) or `#c9a227` (warm gold)
+- **Dark text**: Use dark grey/purple, **never pure black**
 
 ## Table of Contents
 

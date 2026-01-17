@@ -21,7 +21,7 @@ Beyond my personal journey through pregnancy and birth, I bring years of experie
   <div class="rounded-2xl overflow-hidden shadow-lg">
     <img src="/images/rebecah_hatchel_family.png" alt="Rebecah Hatchel and her family" class="w-full h-auto" />
   </div>
-  <p class="text-center text-sm text-gray-500 mt-3 italic">My beautiful family</p>
+  <p class="text-center text-sm text-primary-700 mt-3 italic">My four kids</p>
 </div>
 
 ## What is a Doula?
@@ -95,7 +95,7 @@ I believe that birth is a deeply personal experience, and my role is to support 
 I'd love to learn about your story and discuss how I can support your journey into parenthood. Whether you're just starting to explore your options or you're ready to build your birth team, I'm here for you.
 
 <div class="not-prose mt-10 text-center">
-  <a href="mailto:hello@laborwithlove.com" class="btn btn-primary text-lg px-8 py-3 no-underline">
+  <a href="mailto:hello@laborwithlove.net" class="btn btn-primary text-lg px-8 py-3 no-underline">
     Schedule a Free Consultation
   </a>
 </div>
