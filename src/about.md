@@ -4,8 +4,8 @@ title: About Rebecah
 ---
 
 <div class="not-prose mb-12">
-  <div class="w-64 h-64 mx-auto mb-8 overflow-hidden rounded-full">
-    <img src="/images/rebecah_hatchel.png" alt="Rebecah Hatchel" class="w-full h-full object-cover" />
+  <div class="w-64 mx-auto mb-8 overflow-hidden rounded-2xl">
+    <img src="/images/rebecah_hatchel.png" alt="Rebecah Hatchel" class="w-full h-auto" />
   </div>
 </div>
 
