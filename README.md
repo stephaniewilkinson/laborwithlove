@@ -9,6 +9,12 @@ A Bridgetown-powered website for **Labor with Love**, Rebecah Hatchel's doula pr
 - **Email**: hello@laborwithlove.net
 - **Instagram**: [@laborwithloveroc](https://www.instagram.com/laborwithloveroc)
 
+## Hosting
+
+- **Host**: GitHub Pages
+- **Custom Domain**: laborwithlove.net (DNS via DNSimple)
+- **Note**: stephaniewilkinson.github.io is used by the `portfolio` repo (stephaniewilkinson.com)
+
 ## Brand Assets
 
 All brand assets are located in `src/images/`:
