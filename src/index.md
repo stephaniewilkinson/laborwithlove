@@ -81,10 +81,10 @@ layout: default
             Hi, I'm Rebecah
           </h2>
           <p class="text-lg text-gray-600 mb-6">
-            As a certified doula in Rochester, New York, I believe every birthing person deserves compassionate, non-judgmental support. My role is to help you feel confident and cared for as you bring new life into the world.
+            As a certified doula and proud member of the LGBTQ+ community in Rochester, New York, I believe every birthing person deserves compassionate, affirming support. My role is to help you feel confident and cared for as you bring new life into the world.
           </p>
           <p class="text-lg text-gray-600 mb-8">
-            Whether you're planning a hospital birth, birth center delivery, or home birth, I'm here to support your choices and advocate for your needs.
+            As a mother of four with years of experience working with children and families, I know the journey firsthand. Whether you're planning a hospital birth, birth center delivery, or home birth, I'm here to support your choices and advocate fiercely for your needs.
           </p>
           <a href="/about" class="btn btn-primary no-underline">
             Read My Story &rarr;
