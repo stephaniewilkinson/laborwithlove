@@ -5,6 +5,8 @@ backend:
   name: github
   repo: stephaniewilkinson/laborwithlove
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 # Media files will be stored in src/images
 media_folder: src/images
