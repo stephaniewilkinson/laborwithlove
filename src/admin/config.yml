@@ -2,7 +2,8 @@
 # Docs: https://github.com/sveltia/sveltia-cms
 
 backend:
-  name: git-gateway
+  name: github
+  repo: stephaniewilkinson/laborwithlove
   branch: main
 
 # Media files will be stored in src/images
@@ -65,7 +66,76 @@ collections:
         widget: markdown
         required: true
 
-  # About Page
+  # Homepage Content
+  - name: homepage
+    label: Homepage
+    files:
+      - name: content
+        label: Homepage Content
+        file: src/_data/homepage.yml
+        fields:
+          - name: hero_title
+            label: Hero Title
+            widget: string
+            required: true
+          - name: hero_text
+            label: Hero Text
+            widget: text
+            required: true
+          - name: services_title
+            label: Services Section Title
+            widget: string
+            required: true
+          - name: services_text
+            label: Services Section Intro
+            widget: text
+            required: true
+          - name: service_1_title
+            label: "Service 1: Title"
+            widget: string
+            required: true
+          - name: service_1_text
+            label: "Service 1: Description"
+            widget: text
+            required: true
+          - name: service_2_title
+            label: "Service 2: Title"
+            widget: string
+            required: true
+          - name: service_2_text
+            label: "Service 2: Description"
+            widget: text
+            required: true
+          - name: service_3_title
+            label: "Service 3: Title"
+            widget: string
+            required: true
+          - name: service_3_text
+            label: "Service 3: Description"
+            widget: text
+            required: true
+          - name: about_title
+            label: About Section Title
+            widget: string
+            required: true
+          - name: about_text_1
+            label: About Paragraph 1
+            widget: text
+            required: true
+          - name: about_text_2
+            label: About Paragraph 2
+            widget: text
+            required: true
+          - name: cta_title
+            label: CTA Title
+            widget: string
+            required: true
+          - name: cta_text
+            label: CTA Text
+            widget: text
+            required: true
+
+  # Pages
   - name: pages
     label: Pages
     label_singular: Page
@@ -87,6 +157,27 @@ collections:
             widget: markdown
             required: true
             hint: "You can use Markdown formatting. HTML is also supported for advanced layouts."
+
+      - name: contact
+        label: Contact Page
+        file: src/contact.erb
+        fields:
+          - name: layout
+            label: Layout
+            widget: hidden
+            default: default
+          - name: title
+            label: Title
+            widget: hidden
+            default: Contact
+          - name: page_title
+            label: Page Title
+            widget: string
+            required: true
+          - name: page_intro
+            label: Page Introduction
+            widget: text
+            required: true
 
   # Site Settings
   - name: settings

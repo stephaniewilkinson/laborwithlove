@@ -1,0 +1,113 @@
+---
+layout: home
+title: Home
+---
+<% homepage = site.data.homepage %>
+
+<div class="relative overflow-hidden">
+  <!-- Hero Section -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary-900 dark:text-white leading-tight mb-6">
+        <%= homepage.hero_title %>
+      </h1>
+      <p class="text-xl md:text-2xl text-primary-800 dark:text-white/90 max-w-3xl mx-auto mb-10">
+        <%= homepage.hero_text %>
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/about" class="btn btn-primary text-lg px-8 py-3 no-underline">
+          Learn More About Me
+        </a>
+        <a href="/contact" class="btn btn-secondary text-lg px-8 py-3 no-underline">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div class="bg-white dark:bg-[#231a1f] py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-serif font-bold text-center text-primary-900 dark:text-white mb-4">
+        <%= homepage.services_title %>
+      </h2>
+      <p class="text-xl text-primary-800 dark:text-white/90 text-center max-w-2xl mx-auto mb-12">
+        <%= homepage.services_text %>
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card text-center">
+          <div class="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary-600 dark:text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-bold text-primary-900 dark:text-white mb-2"><%= homepage.service_1_title %></h3>
+          <p class="text-primary-800 dark:text-white/90"><%= homepage.service_1_text %></p>
+        </div>
+
+        <div class="card text-center">
+          <div class="w-16 h-16 bg-secondary-100 dark:bg-secondary-800 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-secondary-500 dark:text-secondary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-bold text-primary-900 dark:text-white mb-2"><%= homepage.service_2_title %></h3>
+          <p class="text-primary-800 dark:text-white/90"><%= homepage.service_2_text %></p>
+        </div>
+
+        <div class="card text-center">
+          <div class="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary-600 dark:text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-bold text-primary-900 dark:text-white mb-2"><%= homepage.service_3_title %></h3>
+          <p class="text-primary-800 dark:text-white/90"><%= homepage.service_3_text %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Preview -->
+  <div class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex items-center gap-12">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <div class="rounded-2xl overflow-hidden">
+            <img src="/images/rebecah_hatchel.png" alt="Rebecah Hatchel" class="w-full h-auto" />
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-primary-900 dark:text-white mb-4">
+            <%= homepage.about_title %>
+          </h2>
+          <p class="text-lg text-primary-800 dark:text-white/90 mb-6">
+            <%= homepage.about_text_1 %>
+          </p>
+          <p class="text-lg text-primary-800 dark:text-white/90 mb-8">
+            <%= homepage.about_text_2 %>
+          </p>
+          <a href="/about" class="btn btn-primary no-underline">
+            Read My Story &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-serif font-bold text-primary-900 dark:text-white mb-4">
+        <%= homepage.cta_title %>
+      </h2>
+      <p class="text-xl text-primary-800 dark:text-white/90 mb-8">
+        <%= homepage.cta_text %>
+      </p>
+      <a href="/contact" class="btn btn-primary text-lg px-8 py-3 no-underline">
+        Schedule a Free Consultation
+      </a>
+    </div>
+  </div>
+</div>
