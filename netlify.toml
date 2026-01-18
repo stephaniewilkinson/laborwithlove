@@ -1,9 +1,9 @@
 [build]
-  command = "bin/bridgetown deploy"
+  command = "bundle install && npm install && bin/bridgetown deploy"
   publish = "output"
 
 [build.environment]
-  RUBY_VERSION = "3.3.0"
+  RUBY_VERSION = "3.4.7"
   NODE_VERSION = "20"
 
 [[headers]]
