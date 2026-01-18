@@ -11,6 +11,11 @@ class RodaApp < Roda
   # But you can also add additional Roda configuration here if needed.
 
   route do |r|
+    # Handle contact form POST and redirect to thank you page
+    r.post "thank-you" do
+      r.redirect "/thank-you/"
+    end
+
     # Load Roda routes in server/routes (and src/_routes via `bridgetown-routes`)
     r.bridgetown
   end
