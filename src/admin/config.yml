@@ -13,7 +13,7 @@ media_folder: src/images
 public_folder: /images
 
 # Logo for the CMS
-logo_url: /images/logo-color.svg
+logo_url: /images/logo-white.svg
 
 # Site URL for previews
 site_url: https://laborwithlove.net
