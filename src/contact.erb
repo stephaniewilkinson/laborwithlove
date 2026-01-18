@@ -1,87 +1,28 @@
+<%#
+  IMPORTANT: This page's text content is managed via Sveltia CMS.
+  All frontmatter fields below are REQUIRED - the page template uses them.
+  Edit via /admin or directly here, but don't remove any fields.
+
+  Fields:
+    - page_title: The h1 heading ("Get in Touch")
+    - page_intro: Subtitle text below the heading
+
+  The contact form is rendered via partial: _partials/_contact_form.erb
+%>
 ---
 layout: default
 title: Contact
+page_title: Get in Touch
+page_intro: I'd love to hear about your birth plans and discuss how I can support you.
 ---
 
 <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
   <div class="text-center mb-10">
-    <h1 class="text-4xl font-serif font-bold text-primary-900 mb-4">Get in Touch</h1>
-    <p class="text-xl text-primary-800">
-      I'd love to hear about your birth plans and discuss how I can support you.
+    <h1 class="text-4xl font-serif font-bold text-primary-900 dark:text-white mb-4"><%= data.page_title %></h1>
+    <p class="text-xl text-primary-800 dark:text-white/90">
+      <%= data.page_intro %>
     </p>
   </div>
 
-  <div class="card">
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
-      <input type="hidden" name="form-name" value="contact" />
-      <p class="hidden">
-        <label>Don't fill this out: <input name="bot-field" /></label>
-      </p>
-
-      <div>
-        <label for="name" class="block text-sm font-medium text-primary-900 mb-2">
-          Name <span class="text-red-500">*</span>
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          class="w-full px-4 py-3 rounded-lg border border-primary-200 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
-          placeholder="Your name"
-        />
-      </div>
-
-      <div>
-        <label for="email" class="block text-sm font-medium text-primary-900 mb-2">
-          Email <span class="text-red-500">*</span>
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          class="w-full px-4 py-3 rounded-lg border border-primary-200 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
-          placeholder="your@email.com"
-        />
-      </div>
-
-      <div>
-        <label for="phone" class="block text-sm font-medium text-primary-900 mb-2">
-          Phone <span class="text-primary-600 text-xs">(optional)</span>
-        </label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          class="w-full px-4 py-3 rounded-lg border border-primary-200 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
-          placeholder="(555) 123-4567"
-        />
-      </div>
-
-      <div>
-        <label for="message" class="block text-sm font-medium text-primary-900 mb-2">
-          Message <span class="text-red-500">*</span>
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows="5"
-          required
-          class="w-full px-4 py-3 rounded-lg border border-primary-200 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition resize-none"
-          placeholder="Tell me about yourself and what kind of support you're looking for..."
-        ></textarea>
-      </div>
-
-      <div>
-        <button
-          type="submit"
-          class="btn btn-primary w-full text-lg py-3"
-        >
-          Send Message
-        </button>
-      </div>
-    </form>
-  </div>
-
+  <%= render "contact_form" %>
 </div>

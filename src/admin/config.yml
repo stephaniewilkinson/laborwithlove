@@ -135,29 +135,37 @@ collections:
             widget: text
             required: true
 
-  # Pages
+  # Pages (folder collection - can create new pages)
   - name: pages
     label: Pages
     label_singular: Page
-    files:
-      - name: about
-        label: About Page
-        file: src/about.md
-        fields:
-          - name: layout
-            label: Layout
-            widget: hidden
-            default: page
-          - name: title
-            label: Title
-            widget: string
-            required: true
-          - name: body
-            label: Content
-            widget: markdown
-            required: true
-            hint: "You can use Markdown formatting. HTML is also supported for advanced layouts."
+    folder: src/_pages
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: layout
+        label: Layout
+        widget: hidden
+        default: page
+      - name: title
+        label: Title
+        widget: string
+        required: true
+      - name: permalink
+        label: URL Path
+        widget: string
+        required: false
+        hint: "Optional. Example: /services/ - leave blank to use the filename"
+      - name: body
+        label: Content
+        widget: markdown
+        required: true
+        hint: "You can use Markdown formatting. HTML is also supported."
 
+  # Contact Page (special template)
+  - name: contact
+    label: Contact Page
+    files:
       - name: contact
         label: Contact Page
         file: src/contact.erb
@@ -214,5 +222,9 @@ collections:
             required: true
           - name: instagram
             label: Instagram URL
+            widget: string
+            required: false
+          - name: facebook
+            label: Facebook URL
             widget: string
             required: false

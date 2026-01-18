@@ -38,12 +38,25 @@ Why this structure:
 - ERB templates can't have their frontmatter edited by the CMS (it doesn't parse .erb)
 - Separating data from template keeps things clean
 
-### Other Pages
+### Pages (folder collection - can create new pages)
+
+Pages are stored in `src/_pages/` and can be created/edited via the CMS.
+
+| Page | File | URL |
+|------|------|-----|
+| About | `src/_pages/about.md` | /about/ |
+| (new pages) | `src/_pages/*.md` | /slug/ |
+
+Each page has:
+- `title` - Page title
+- `permalink` - Optional custom URL (defaults to filename)
+- `body` - Markdown content
+
+### Special Pages (fixed templates)
 
 | Page | File | CMS Editable |
 |------|------|--------------|
-| About | `src/about.md` | Yes - markdown body |
-| Contact | `src/contact.erb` | Limited - only frontmatter fields |
+| Contact | `src/contact.erb` | Limited - title and intro only |
 | Blog Posts | `src/_posts/*.md` | Yes - full markdown |
 
 ### Partials

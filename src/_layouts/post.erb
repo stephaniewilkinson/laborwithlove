@@ -5,28 +5,28 @@ layout: default
 <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
   <!-- Post Header -->
   <header class="mb-10 text-center">
-    <time datetime="<%= data.date.to_date %>" class="text-sm text-primary-600 font-medium uppercase tracking-wide">
+    <time datetime="<%= data.date.to_date %>" class="text-sm text-primary-600 dark:text-secondary-300 font-medium uppercase tracking-wide">
       <%= data.date.strftime("%B %d, %Y") %>
     </time>
-    <h1 class="mt-2 text-4xl font-serif font-bold text-primary-900 leading-tight">
+    <h1 class="mt-2 text-4xl font-serif font-bold text-primary-900 dark:text-white leading-tight">
       <%= data.title %>
     </h1>
     <% if data.subtitle %>
-      <p class="mt-3 text-xl text-primary-800"><%= data.subtitle %></p>
+      <p class="mt-3 text-xl text-primary-800 dark:text-white/90"><%= data.subtitle %></p>
     <% end %>
   </header>
 
   <!-- Post Content -->
-  <div class="prose prose-lg prose-purple mx-auto prose-headings:font-serif prose-a:text-primary-600 hover:prose-a:text-primary-700">
+  <div class="prose prose-lg prose-purple dark:prose-invert mx-auto prose-headings:font-serif prose-a:text-primary-600 dark:prose-a:text-primary-400 hover:prose-a:text-primary-700 dark:hover:prose-a:text-primary-300">
     <%= yield %>
   </div>
 
   <!-- Post Footer -->
-  <footer class="mt-12 pt-8 border-t border-primary-200">
+  <footer class="mt-12 pt-8 border-t border-primary-200 dark:border-primary-700">
     <div class="flex items-center justify-between">
       <div>
-        <p class="text-sm text-primary-700">Written by</p>
-        <p class="font-medium text-primary-900"><%= site.metadata.owner %></p>
+        <p class="text-sm text-primary-700 dark:text-primary-300">Written by</p>
+        <p class="font-medium text-primary-900 dark:text-white"><%= site.metadata.owner %></p>
       </div>
       <a href="<%= relative_url '/posts' %>" class="btn btn-primary no-underline">
         &larr; All Posts

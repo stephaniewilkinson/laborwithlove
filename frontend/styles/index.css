@@ -4,6 +4,7 @@
 
 @theme {
   --color-background: #fcf6f7;
+  --color-background-dark: #1a1418;
 
   --color-primary-50: #faf5fb;
   --color-primary-100: #f5ebf6;
@@ -29,9 +30,13 @@
   --color-secondary-800: #334230;
   --color-secondary-900: #2b3729;
 
-  /* Dark text - use instead of black */
-  --color-text-dark: #3d1a42;
-  --color-text-body: #4a1e4f;
+  /* Dark text - neutral dark for readability */
+  --color-text-dark: #1f2937;
+  --color-text-body: #374151;
+
+  /* Dark mode text colors - white for readability */
+  --color-text-dark-mode: #ffffff;
+  --color-text-body-dark: rgba(255, 255, 255, 0.9);
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-serif: 'Georgia', 'Cambria', serif;
@@ -40,8 +45,6 @@
 /* Custom base styles */
 @layer base {
   body {
-    background-color: var(--color-background);
-    color: var(--color-text-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -51,6 +54,13 @@
     color: var(--color-text-dark);
   }
 
+  /* Dark mode heading colors */
+  @media (prefers-color-scheme: dark) {
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--color-text-dark-mode);
+    }
+  }
+
   a {
     color: var(--color-primary-600);
     transition: color 0.15s ease-in-out;
@@ -58,6 +68,16 @@
 
   a:hover {
     color: var(--color-secondary-500);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    a {
+      color: var(--color-secondary-300);
+    }
+
+    a:hover {
+      color: var(--color-secondary-200);
+    }
   }
 }
 
@@ -83,6 +103,16 @@
     box-shadow: 0 1px 3px 0 rgb(61 26 66 / 0.15);
   }
 
+  @media (prefers-color-scheme: dark) {
+    .btn-primary {
+      background-color: var(--color-primary-500);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-secondary-400);
+    }
+  }
+
   .btn-secondary {
     background-color: var(--color-secondary-500);
     color: white;
@@ -94,15 +124,51 @@
     box-shadow: 0 1px 3px 0 rgb(61 26 66 / 0.15);
   }
 
+  @media (prefers-color-scheme: dark) {
+    .btn-secondary {
+      background-color: var(--color-secondary-400);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--color-secondary-500);
+    }
+  }
+
   .card {
     background-color: white;
     border-radius: 0.75rem;
     box-shadow: 0 1px 3px 0 rgb(61 26 66 / 0.08);
     padding: 1.5rem;
-    transition: box-shadow 0.15s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
   }
 
   .card:hover {
     box-shadow: 0 4px 6px -1px rgb(61 26 66 / 0.12);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .card {
+      background-color: #2a1f25;
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3);
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+    }
+  }
+
+  /* Dark mode prose for blog content */
+  @media (prefers-color-scheme: dark) {
+    .prose {
+      --tw-prose-body: rgba(255, 255, 255, 0.9);
+      --tw-prose-headings: white;
+      --tw-prose-links: var(--color-secondary-300);
+      --tw-prose-bold: white;
+      --tw-prose-quotes: rgba(255, 255, 255, 0.8);
+      --tw-prose-quote-borders: var(--color-secondary-500);
+      --tw-prose-code: white;
+      --tw-prose-pre-code: rgba(255, 255, 255, 0.9);
+      --tw-prose-pre-bg: #2a1f25;
+    }
   }
 }

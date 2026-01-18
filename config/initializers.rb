@@ -21,6 +21,12 @@ Bridgetown.configure do |config|
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
 
+  # Pages collection - for CMS-managed content pages
+  collection "pages" do
+    output true
+    permalink "/:slug/"
+  end
+
   # Other options you might want to investigate:
 
   # See list of timezone values here:

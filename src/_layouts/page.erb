@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <h1 class="text-4xl font-serif font-bold text-primary-900 mb-8 text-center"><%= data.title %></h1>
+  <h1 class="text-4xl font-serif font-bold text-primary-900 dark:text-white mb-8 text-center"><%= data.title %></h1>
 
-  <div class="prose prose-lg prose-purple mx-auto prose-headings:font-serif prose-a:text-primary-600 hover:prose-a:text-primary-700">
+  <div class="prose prose-lg prose-purple dark:prose-invert mx-auto prose-headings:font-serif prose-a:text-primary-600 dark:prose-a:text-primary-400 hover:prose-a:text-primary-700 dark:hover:prose-a:text-primary-300">
     <%= yield %>
   </div>
 </div>
