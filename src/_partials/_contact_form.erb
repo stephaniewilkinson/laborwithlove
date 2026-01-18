@@ -5,7 +5,7 @@
   Form submissions go to Netlify Forms dashboard.
 %>
 <div class="card">
-  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
+  <form name="contact" method="POST" action="/contact/" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
     <input type="hidden" name="form-name" value="contact" />
     <p class="hidden">
       <label>Don't fill this out: <input name="bot-field" /></label>
