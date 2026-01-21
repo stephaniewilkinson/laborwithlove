@@ -329,13 +329,36 @@ collections:
             widget: color
             required: true
             hint: Alternate section background in dark mode
-          - name: font_sans
-            label: Sans-Serif Font
-            widget: string
+          - name: font_heading
+            label: Heading Font
+            widget: select
+            options:
+              - { label: "Black Echo (Brand Font)", value: "Black Echo" }
+              - { label: "Playfair Display (Elegant Serif)", value: "Playfair Display" }
+              - { label: "Merriweather (Classic Serif)", value: "Merriweather" }
+              - { label: "Lora (Modern Serif)", value: "Lora" }
+              - { label: "Cormorant Garamond (Refined Serif)", value: "Cormorant Garamond" }
+              - { label: "Libre Baskerville (Traditional Serif)", value: "Libre Baskerville" }
+              - { label: "Source Serif Pro (Clean Serif)", value: "Source Serif Pro" }
+              - { label: "Crimson Text (Book Serif)", value: "Crimson Text" }
+              - { label: "DM Serif Display (Bold Serif)", value: "DM Serif Display" }
+              - { label: "Montserrat (Modern Sans)", value: "Montserrat" }
+              - { label: "Raleway (Elegant Sans)", value: "Raleway" }
             required: true
-            hint: "Font for body text (e.g., Inter, system-ui, sans-serif)"
-          - name: font_serif
-            label: Serif Font
-            widget: string
+            hint: "Font for headings. Black Echo is the brand font (self-hosted), others from Google Fonts."
+          - name: font_body
+            label: Body Font
+            widget: select
+            options:
+              - { label: "Inter (Clean & Modern)", value: "Inter" }
+              - { label: "Open Sans (Friendly & Readable)", value: "Open Sans" }
+              - { label: "Lato (Warm & Stable)", value: "Lato" }
+              - { label: "Source Sans Pro (Professional)", value: "Source Sans Pro" }
+              - { label: "Nunito (Rounded & Soft)", value: "Nunito" }
+              - { label: "Poppins (Geometric & Modern)", value: "Poppins" }
+              - { label: "Roboto (Neutral & Clean)", value: "Roboto" }
+              - { label: "Work Sans (Contemporary)", value: "Work Sans" }
+              - { label: "Mulish (Minimalist)", value: "Mulish" }
+              - { label: "Quicksand (Friendly & Round)", value: "Quicksand" }
             required: true
-            hint: "Font for headings (e.g., Georgia, Cambria, serif)"
+            hint: "Font for body text (loaded from Google Fonts)"

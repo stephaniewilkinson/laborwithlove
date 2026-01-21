@@ -2,6 +2,17 @@
 @plugin "@tailwindcss/typography";
 @import "./syntax-highlighting.css";
 
+/* Black Echo - Brand title font from Looka */
+@font-face {
+  font-family: 'Black Echo';
+  src: url('/fonts/BlackEcho.woff') format('woff'),
+       url('/fonts/BlackEcho.ttf') format('truetype'),
+       url('/fonts/BlackEcho.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-background: #fcf6f7;
   --color-background-dark: #1a1418;
@@ -44,7 +55,7 @@
   --color-text-body-dark: rgba(255, 255, 255, 0.9);
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-serif: 'Georgia', 'Cambria', serif;
+  --font-serif: 'Black Echo', 'Georgia', 'Cambria', serif;
 }
 
 /* Custom base styles */

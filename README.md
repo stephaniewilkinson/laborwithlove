@@ -35,12 +35,18 @@ All brand assets are located in `src/images/`:
 | `logo-black.svg` | Black logo (no background) | Light backgrounds, print |
 | `logo-color-bg.svg` | Color logo with background | Featured sections |
 
+### Logo Fonts (from Looka)
+
+| Element | Font |
+|---------|------|
+| Title ("Labor with Love") | Black Echo |
+| Subtitle ("Rebecah Hatchel, Doula") | Neon Solid |
+
 ### Brand Colors
 
+- **Primary**: `#6a2c70` (purple)
+- **Secondary**: `#3faa49` (green)
 - **Background**: `#fcf6f7` (soft pink/cream)
-- **Primary**: `#6a2b70` (deep purple)
-- **Secondary**: `#7d9a78` (sage green) or `#c9a227` (warm gold)
-- **Dark text**: Use dark grey/purple, **never pure black**
 
 ## Table of Contents
 

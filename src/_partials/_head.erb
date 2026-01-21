@@ -51,6 +51,21 @@
 <link rel="canonical" href="<%= canonical_url %>" />
 
 <link rel="icon" type="image/svg+xml" href="<%= relative_url '/images/heart_icon.svg' %>" />
+
+<!-- Google Fonts -->
+<%
+  styles = site.data.styles
+  if styles
+    font_heading = styles.font_heading || "Playfair Display"
+    font_body = styles.font_body || "Inter"
+    # URL encode font names (replace spaces with +)
+    fonts = [font_heading, font_body].uniq.map { |f| f.gsub(' ', '+') + ":wght@400;500;600;700" }.join("&family=")
+%>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=<%= fonts %>&display=swap" rel="stylesheet">
+<% end %>
+
 <link rel="stylesheet" href="<%= asset_path :css %>" />
 <%= render "custom_styles" %>
 <script src="<%= asset_path :js %>" defer></script>
