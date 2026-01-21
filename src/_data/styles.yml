@@ -1,0 +1,25 @@
+# Site Styles Configuration
+# These values can be edited in the CMS admin panel
+
+# Background colors
+background_light: "#fcf6f7"
+background_dark: "#1a1418"
+
+# Primary color palette (Purple)
+primary: "#6a2b70"
+primary_light: "#a85fb4"
+primary_dark: "#4a1e4f"
+
+# Secondary color palette (Sage Green)
+secondary: "#5e7d59"
+secondary_light: "#7d9a78"
+secondary_dark: "#3d5139"
+
+# Section backgrounds for dark mode
+header_dark: "#1f1a1c"
+footer_dark: "#151311"
+section_dark: "#231a1f"
+
+# Typography
+font_sans: "Inter, system-ui, -apple-system, sans-serif"
+font_serif: "Georgia, Cambria, serif"

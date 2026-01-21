@@ -63,6 +63,16 @@ collections:
           - { label: "Birth Stories", value: "birth-stories" }
           - { label: "Resources", value: "resources" }
         required: true
+      - name: featured_image
+        label: Featured Image
+        widget: image
+        required: false
+        hint: "Main image for the post. Also used for social sharing (1200x630 recommended)."
+      - name: og_description
+        label: Social Description
+        widget: text
+        required: false
+        hint: "Optional: Custom description for social sharing (max 160 chars). If empty, uses the post description."
       - name: body
         label: Content
         widget: markdown
@@ -158,6 +168,16 @@ collections:
         widget: string
         required: false
         hint: "Optional. Example: /services/ - leave blank to use the filename"
+      - name: description
+        label: Page Description
+        widget: text
+        required: false
+        hint: "Brief description for SEO and social sharing (max 160 chars)"
+      - name: og_image
+        label: Social Image
+        widget: image
+        required: false
+        hint: "Image for social sharing (1200x630 recommended). If empty, uses site default."
       - name: body
         label: Content
         widget: markdown
@@ -230,3 +250,92 @@ collections:
             label: Facebook URL
             widget: string
             required: false
+          - name: twitter_handle
+            label: Twitter/X Handle
+            widget: string
+            required: false
+            hint: "Your Twitter/X username (without @)"
+          - name: url
+            label: Site URL
+            widget: string
+            required: true
+            hint: "Full URL of your site (e.g., https://laborwithlove.net)"
+          - name: og_default_image
+            label: Default Social Image
+            widget: image
+            required: false
+            hint: "Default image for social sharing (1200x630 recommended). Used when pages don't have their own image."
+
+  # Site Styles
+  - name: styles
+    label: Site Styles
+    files:
+      - name: styles
+        label: Colors & Typography
+        file: src/_data/styles.yml
+        fields:
+          - name: background_light
+            label: Background (Light Mode)
+            widget: color
+            required: true
+            hint: Main background color for light mode
+          - name: background_dark
+            label: Background (Dark Mode)
+            widget: color
+            required: true
+            hint: Main background color for dark mode
+          - name: primary
+            label: Primary Color
+            widget: color
+            required: true
+            hint: Main brand color (purple) - used for buttons, links, accents
+          - name: primary_light
+            label: Primary Light
+            widget: color
+            required: true
+            hint: Lighter shade of primary color
+          - name: primary_dark
+            label: Primary Dark
+            widget: color
+            required: true
+            hint: Darker shade of primary color
+          - name: secondary
+            label: Secondary Color
+            widget: color
+            required: true
+            hint: Secondary brand color (sage green)
+          - name: secondary_light
+            label: Secondary Light
+            widget: color
+            required: true
+            hint: Lighter shade of secondary color
+          - name: secondary_dark
+            label: Secondary Dark
+            widget: color
+            required: true
+            hint: Darker shade of secondary color
+          - name: header_dark
+            label: Header (Dark Mode)
+            widget: color
+            required: true
+            hint: Header background in dark mode
+          - name: footer_dark
+            label: Footer (Dark Mode)
+            widget: color
+            required: true
+            hint: Footer background in dark mode
+          - name: section_dark
+            label: Section (Dark Mode)
+            widget: color
+            required: true
+            hint: Alternate section background in dark mode
+          - name: font_sans
+            label: Sans-Serif Font
+            widget: string
+            required: true
+            hint: "Font for body text (e.g., Inter, system-ui, sans-serif)"
+          - name: font_serif
+            label: Serif Font
+            widget: string
+            required: true
+            hint: "Font for headings (e.g., Georgia, Cambria, serif)"

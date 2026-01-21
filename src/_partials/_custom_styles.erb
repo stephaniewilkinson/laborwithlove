@@ -1,0 +1,34 @@
+<%#
+  Custom Styles Partial
+  Outputs CSS custom properties from src/_data/styles.yml
+  These override the default Tailwind theme values
+%>
+<% styles = site.data.styles %>
+<% if styles %>
+<style>
+  :root {
+    /* Background colors */
+    --color-background: <%= styles.background_light %>;
+    --color-background-dark: <%= styles.background_dark %>;
+
+    /* Primary colors */
+    --color-primary-500: <%= styles.primary_light %>;
+    --color-primary-600: <%= styles.primary %>;
+    --color-primary-700: <%= styles.primary_dark %>;
+
+    /* Secondary colors */
+    --color-secondary-400: <%= styles.secondary_light %>;
+    --color-secondary-500: <%= styles.secondary %>;
+    --color-secondary-600: <%= styles.secondary_dark %>;
+
+    /* Dark mode section colors */
+    --color-header-dark: <%= styles.header_dark %>;
+    --color-footer-dark: <%= styles.footer_dark %>;
+    --color-section-dark: <%= styles.section_dark %>;
+
+    /* Fonts */
+    --font-sans: <%= styles.font_sans %>;
+    --font-serif: <%= styles.font_serif %>;
+  }
+</style>
+<% end %>

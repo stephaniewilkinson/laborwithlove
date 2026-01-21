@@ -11,5 +11,14 @@ email: hello@laborwithlove.net
 description: >-
   Labor with Love provides compassionate, LGBTQ+-affirming doula services in Rochester, New York. Rebecah Hatchel offers personalized birth support, postpartum care, and guidance for your journey into parenthood.
 owner: Rebecah Hatchel
+
+# Social Media
 instagram: https://www.instagram.com/laborwithloveroc
 facebook:
+twitter_handle:
+
+# Site URL (used for OpenGraph and canonical URLs)
+url: https://laborwithlove.net
+
+# Default OpenGraph image (1200x630 recommended)
+og_default_image: /images/og-default.png

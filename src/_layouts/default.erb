@@ -5,22 +5,22 @@
   </head>
   <body class="min-h-screen flex flex-col bg-background dark:bg-background-dark text-text-body dark:text-text-body-dark">
     <!-- Navigation -->
-    <header class="bg-white dark:bg-[#1f1a1c] shadow-sm sticky top-0 z-50">
+    <header class="bg-white dark:bg-header-dark shadow-sm sticky top-0 z-50">
       <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center" style="height: 100px;">
+        <div class="flex justify-between items-center h-[100px]">
           <a href="<%= relative_url '/' %>" class="flex items-center no-underline">
-            <img src="<%= relative_url '/images/logo-color.svg' %>" alt="Labor with Love" style="height: 68px; width: auto;" class="dark:hidden" />
-            <img src="<%= relative_url '/images/logo-white.svg' %>" alt="Labor with Love" style="height: 68px; width: auto;" class="hidden dark:block" />
+            <img src="<%= relative_url '/images/logo-color.svg' %>" alt="Labor with Love" class="h-[68px] w-auto dark:hidden" />
+            <img src="<%= relative_url '/images/logo-white.svg' %>" alt="Labor with Love" class="h-[68px] w-auto hidden dark:block" />
           </a>
           <ul class="hidden md:flex items-center space-x-8">
-            <li><a href="<%= relative_url '/' %>" class="text-secondary-700 dark:text-secondary-300 hover:text-primary-600 dark:hover:text-secondary-200 font-medium no-underline">Home</a></li>
-            <li><a href="<%= relative_url '/about' %>" class="text-secondary-700 dark:text-secondary-300 hover:text-primary-600 dark:hover:text-secondary-200 font-medium no-underline">About</a></li>
-            <li><a href="<%= relative_url '/posts' %>" class="text-secondary-700 dark:text-secondary-300 hover:text-primary-600 dark:hover:text-secondary-200 font-medium no-underline">Blog</a></li>
+            <li><a href="<%= relative_url '/' %>" class="nav-link">Home</a></li>
+            <li><a href="<%= relative_url '/about' %>" class="nav-link">About</a></li>
+            <li><a href="<%= relative_url '/posts' %>" class="nav-link">Blog</a></li>
             <li><a href="<%= relative_url '/contact' %>" class="btn btn-primary no-underline">Contact</a></li>
           </ul>
           <!-- Mobile menu button -->
-          <button type="button" class="md:hidden p-2 text-primary-800 dark:text-primary-300" id="mobile-menu-btn">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button type="button" class="md:hidden p-2 text-primary-800 dark:text-primary-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-md" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
@@ -28,10 +28,10 @@
         <!-- Mobile menu -->
         <div class="md:hidden hidden pb-4" id="mobile-menu">
           <ul class="space-y-2">
-            <li><a href="<%= relative_url '/' %>" class="text-secondary-700 dark:text-secondary-300 block py-2 hover:text-primary-600 dark:hover:text-secondary-200 no-underline">Home</a></li>
-            <li><a href="<%= relative_url '/about' %>" class="text-secondary-700 dark:text-secondary-300 block py-2 hover:text-primary-600 dark:hover:text-secondary-200 no-underline">About</a></li>
-            <li><a href="<%= relative_url '/posts' %>" class="text-secondary-700 dark:text-secondary-300 block py-2 hover:text-primary-600 dark:hover:text-secondary-200 no-underline">Blog</a></li>
-            <li><a href="<%= relative_url '/contact' %>" class="block py-2 text-primary-600 dark:text-secondary-300 font-medium no-underline">Contact</a></li>
+            <li><a href="<%= relative_url '/' %>" class="nav-link block py-2">Home</a></li>
+            <li><a href="<%= relative_url '/about' %>" class="nav-link block py-2">About</a></li>
+            <li><a href="<%= relative_url '/posts' %>" class="nav-link block py-2">Blog</a></li>
+            <li><a href="<%= relative_url '/contact' %>" class="nav-link block py-2">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -42,7 +42,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-secondary-900 dark:bg-[#151311] mt-16">
+    <footer class="bg-secondary-900 dark:bg-footer-dark mt-16">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid md:grid-cols-3 gap-8">
           <div>
@@ -52,17 +52,17 @@
           <div>
             <h4 class="font-semibold text-white mb-4">Quick Links</h4>
             <ul class="space-y-2 text-sm">
-              <li><a href="<%= relative_url '/' %>" class="text-secondary-200 dark:text-secondary-300 hover:text-white no-underline">Home</a></li>
-              <li><a href="<%= relative_url '/about' %>" class="text-secondary-200 dark:text-secondary-300 hover:text-white no-underline">About Rebecah</a></li>
-              <li><a href="<%= relative_url '/posts' %>" class="text-secondary-200 dark:text-secondary-300 hover:text-white no-underline">Blog</a></li>
-              <li><a href="<%= relative_url '/contact' %>" class="text-secondary-200 dark:text-secondary-300 hover:text-white no-underline">Contact</a></li>
+              <li><a href="<%= relative_url '/' %>" class="footer-link">Home</a></li>
+              <li><a href="<%= relative_url '/about' %>" class="footer-link">About Rebecah</a></li>
+              <li><a href="<%= relative_url '/posts' %>" class="footer-link">Blog</a></li>
+              <li><a href="<%= relative_url '/contact' %>" class="footer-link">Contact</a></li>
             </ul>
           </div>
           <div>
             <h4 class="font-semibold text-white mb-4">Get in Touch</h4>
             <p class="text-secondary-200 dark:text-secondary-300 text-sm mb-2"><%= site.metadata.location %></p>
-            <a href="<%= site.metadata.instagram %>" target="_blank" rel="noopener noreferrer" class="text-secondary-300 dark:text-secondary-400 hover:text-white no-underline" aria-label="Instagram">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <a href="<%= site.metadata.instagram %>" target="_blank" rel="noopener noreferrer" class="footer-link inline-block" aria-label="Instagram">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
               </svg>
             </a>
@@ -75,8 +75,12 @@
     </footer>
 
     <script>
-      document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuBtn.addEventListener('click', function() {
+        const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', !isExpanded);
+        mobileMenu.classList.toggle('hidden');
       });
     </script>
   </body>
