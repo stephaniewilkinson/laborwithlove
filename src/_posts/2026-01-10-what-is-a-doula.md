@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "What is a Doula? Understanding Birth Support"
+title: What is a Doula? Understanding Birth Support
 date: 2026-01-10
-description: "Learn about what doulas do, how they differ from midwives, and the evidence-based benefits of doula support during birth."
+description: Learn about what doulas do, how they differ from midwives, and the evidence-based benefits of doula support during birth.
 categories: education
+og_description: ''
 ---
 
 One of the questions I hear most often is: "What exactly is a doula?" It's a fair question! While doula support has been around for centuries, the term is still new to many families. Let me break it down for you.
@@ -15,6 +16,7 @@ The word "doula" comes from the ancient Greek meaning "a woman who serves." Toda
 ## What Does a Doula Do?
 
 ### Before Birth
+
 - Meet with you to understand your birth preferences
 - Provide education about labor, birth options, and comfort measures
 - Help you develop a birth plan
@@ -22,6 +24,7 @@ The word "doula" comes from the ancient Greek meaning "a woman who serves." Toda
 - Offer emotional support during pregnancy
 
 ### During Labor and Birth
+
 - Provide continuous, one-on-one support
 - Suggest comfort measures like position changes, massage, and breathing techniques
 - Offer encouragement and reassurance
@@ -30,6 +33,7 @@ The word "doula" comes from the ancient Greek meaning "a woman who serves." Toda
 - Advocate for your wishes
 
 ### After Birth
+
 - Help with initial breastfeeding
 - Provide emotional support during the immediate postpartum period
 - Offer resources for the weeks ahead
@@ -42,7 +46,7 @@ This is another common question! Here's the key difference:
 
 **Doulas** do not perform any clinical tasks. We focus entirely on your comfort, emotional wellbeing, and advocacy. We support you and your partner through the experience, but we don't deliver babies or make medical decisions.
 
-Think of it this way: your midwife or doctor cares for your medical needs, while your doula cares for *you*.
+Think of it this way: your midwife or doctor cares for your medical needs, while your doula cares for _you_.
 
 ## The Evidence for Doula Support
 
@@ -55,7 +59,7 @@ Research consistently shows that continuous labor support from a doula can lead 
 - Higher satisfaction with the birth experience
 - Better breastfeeding outcomes
 
-*(Source: Cochrane Review, "Continuous support for women during childbirth")*
+_(Source: Cochrane Review, "Continuous support for women during childbirth")_
 
 ## Is a Doula Right for You?
 
