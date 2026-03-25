@@ -1,24 +1,11 @@
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.metadata.myvariable }}.
-
 title: Labor with Love
 tagline: Rebecah Hatchel, Doula
+owner: Rebecah Hatchel
 location: Rochester, New York
 email: hello@laborwithlove.net
-description: >-
-  Labor with Love provides compassionate, LGBTQ+-affirming doula services in Rochester, New York. Rebecah Hatchel offers personalized birth support, postpartum care, and guidance for your journey into parenthood.
-owner: Rebecah Hatchel
-
-# Social Media
+description: Labor with Love provides compassionate, LGBTQ+-affirming doula services in Rochester, New York. Rebecah Hatchel offers personalized birth support, postpartum care, and guidance for your journey into parenthood.
 instagram: https://www.instagram.com/laborwithloveroc
-facebook:
-twitter_handle:
-
-# Site URL (used for OpenGraph and canonical URLs)
+facebook: https://www.facebook.com/share/1CCqzBJgYH/?mibextid=wwXIfr
+twitter_handle: ''
 url: https://laborwithlove.net
-
-# Default OpenGraph image (1200x630 recommended)
 og_default_image: /images/og-default.png
