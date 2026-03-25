@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Welcome to Labor with Love"
+title: Welcome to Labor with Love
 date: 2026-01-17
-description: "Introducing my doula practice and sharing my vision for supporting families in Rochester, NY."
+description: Introducing my doula practice and sharing my vision for supporting families in Rochester, NY.
 categories: updates
+og_description: ''
 ---
 
 Hello and welcome to Labor with Love! I'm Rebecah Hatchel, and I'm so glad you've found your way here.
@@ -30,5 +31,5 @@ Whether you're newly pregnant, planning your third birth, or just curious about 
 
 Feel free to reach out with questions, or schedule a free consultation to chat about your birth plans. I can't wait to meet you!
 
-*With love and support,*
-*Rebecah*
+_With love and support,_
+_Rebecah_
