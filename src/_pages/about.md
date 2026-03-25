@@ -42,9 +42,9 @@ Research shows that having a doula can lead to:
 - More positive birth experiences
 - Better breastfeeding outcomes
 
-## My DONA Training 
+## My DONA Training
 
-I am proud to be trai through [**DONA International**](https://www.dona.org/become-a-doula/birth-doula-certification/), the oldest and largest doula certifying organization in the world. DONA has been training professional doulas for over 25 years and maintains rigorous standards for certification, with more than 13,000 certified doulas in over 50 countries worldwide.
+I am proud to be trained through [**DONA International**](https://www.dona.org/become-a-doula/birth-doula-certification/), the oldest and largest doula training and certifying organization in the world. DONA has been training professional doulas for over 25 years and maintains rigorous standards for certification, with more than 13,000 certified doulas in over 50 countries worldwide.
 
 The [DONA birth doula certification process](https://www.dona.org/become-a-doula/birth-doula-certification/) is comprehensive and ensures that certified doulas have both the knowledge and hands-on experience to provide exceptional support:
 
